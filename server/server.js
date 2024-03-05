@@ -1,6 +1,4 @@
-//express conn
 const express=require('express');
-//mongo conn 
 const mongoose=require('mongoose');
 const app=express();
 // const axios=require('axios')
