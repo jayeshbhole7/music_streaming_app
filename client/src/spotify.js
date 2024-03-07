@@ -8,8 +8,7 @@ const redirectUri="http://localhost:3000";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-  "%20"
-)}&response_type=token&show_dialog=true`;
+  "%20")}&response_type=token&show_dialog=true`;
 
 const apiClient = axios.create({
   baseURL: "https://api.spotify.com/v1/",
