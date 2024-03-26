@@ -20,19 +20,20 @@ To run the application locally, you'll need to have Node.js and MongoDB installe
 For frontend
 
 ```
+cd client
 npm install 
 ```
 
 For backend
 
 ```
-cd API
+cd server
 npm install
 ```
 
 This will install the required dependencies for both the client and server applications.
 
-Next, create a .env file in the API directory with the following environment variables:
+Next, create a .env file in the server directory with the following environment variables:
 
 ```
 MONGODB_URI=<your-mongodb-uri>
@@ -47,11 +48,11 @@ Finally, start the client and server applications with the following commands:
 npm run dev
 ```
 
-API
+server
 
 ```
-cd API
-node server.js
+cd server
+node server.js || nodemon start
 ```
 
 The client application will be available at http://localhost:5173, and the server will be running on http://localhost:1337.
